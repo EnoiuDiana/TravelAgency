@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Customer.CustomerController">
+    <children>
+        <TabPane prefHeight="606.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Vacation Packages">
+                    <content>
+                        <fx:include source="customerBook.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Bookings">
+                    <content>
+                        <fx:include source="customerAllBookings.fxml" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Button layoutX="808.0" layoutY="606.0" mnemonicParsing="false" onAction="#backButtonPushed" text="Back" />
+    </children>
+</AnchorPane>

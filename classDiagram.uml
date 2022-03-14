@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="840.2383978537998" y="377.0">model.VacationDestination</node>
+    <node x="482.04196928237127" y="625.0">service.VacationPackageService</node>
+    <node x="181.78036213951407" y="0.0">model.User</node>
+    <node x="228.52854199372047" y="377.0">repository.BookingRepo</node>
+    <node x="781.8383978538" y="228.0">model.VacationPackage</node>
+    <node x="927.7792732317286" y="804.0">controller.Admin</node>
+    <node x="245.35833333333335" y="536.0">service.BookingService</node>
+    <node x="254.04761904761904" y="119.0">repository.JpaDao</node>
+    <node x="773.9883978537998" y="536.0">repository.VacationDestinationRepo</node>
+    <node x="794.8633978538" y="625.0">service.VacationDestinationService</node>
+    <node x="0.0" y="625.0">controller.Register</node>
+    <node x="269.4928277080062" y="228.0">repository.JpaDaoImpl</node>
+    <node x="45.5" y="536.0">service.UserService</node>
+    <node x="454.93155125297994" y="536.0">repository.VacationPackageRepo</node>
+    <node x="482.744016821472" y="804.0">controller.Customer</node>
+    <node x="491.1491121395141" y="119.0">model.Booking</node>
+    <node x="76.83333333333331" y="377.0">repository.UserRepo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="service.VacationPackageService" target="model.VacationDestination">
+      <point x="86.57142857142856" y="-14.5" />
+      <point x="669.6133978537998" y="605.0" />
+      <point x="741.4883978537998" y="605.0" />
+      <point x="741.4883978537998" y="496.0" />
+      <point x="870.4050645204666" y="496.0" />
+      <point x="-60.33333333333337" y="14.5" />
+    </edge>
+    <edge source="repository.UserRepo" target="repository.JpaDaoImpl">
+      <point x="34.66666666666666" y="-14.5" />
+      <point x="163.5" y="337.0" />
+      <point x="294.77854199372047" y="337.0" />
+      <point x="-33.71428571428572" y="14.5" />
+    </edge>
+    <edge source="model.Booking" target="model.VacationPackage">
+      <point x="42.4375" y="14.5" />
+      <point x="582.086612139514" y="178.0" />
+      <point x="909.3383978538" y="178.0" />
+      <point x="51.0" y="-14.5" />
+    </edge>
+    <edge source="service.VacationPackageService" target="service.BookingService">
+      <point x="-57.714285714285666" y="-14.5" />
+      <point x="525.3276835680856" y="595.0" />
+      <point x="379.19166666666666" y="595.0" />
+      <point x="60.833333333333314" y="14.5" />
+    </edge>
+    <edge source="service.BookingService" target="repository.BookingRepo">
+      <point x="-29.19999999999999" y="-14.5" />
+      <point x="289.15833333333336" y="506.0" />
+      <point x="259.77854199372047" y="506.0" />
+      <point x="-31.25" y="14.5" />
+    </edge>
+    <edge source="service.VacationDestinationService" target="repository.VacationDestinationRepo">
+      <point x="-76.66666666666686" y="-14.5" />
+      <point x="833.1967311871332" y="605.0" />
+      <point x="826.2383978537998" y="605.0" />
+      <point x="-52.25" y="14.5" />
+    </edge>
+    <edge source="controller.Register" target="service.UserService">
+      <point x="18.0" y="-14.5" />
+      <point x="90.0" y="605.0" />
+      <point x="76.75" y="605.0" />
+      <point x="-31.25" y="14.5" />
+    </edge>
+    <edge source="controller.Customer" target="service.VacationDestinationService">
+      <point x="55.38461538461536" y="-14.5" />
+      <point x="610.1286322060873" y="774.0" />
+      <point x="817.8633978538" y="774.0" />
+      <point x="-92.0" y="14.5" />
+    </edge>
+    <edge source="repository.VacationPackageRepo" target="model.VacationDestination">
+      <point x="67.875" y="-14.5" />
+      <point x="613.30655125298" y="486.0" />
+      <point x="850.2939534093555" y="486.0" />
+      <point x="-80.44444444444446" y="14.5" />
+    </edge>
+    <edge source="controller.Admin" target="model.VacationPackage">
+      <point x="56.375" y="-14.5" />
+      <point x="1045.6542732317284" y="784.0" />
+      <point x="1076.3633978538" y="784.0" />
+      <point x="1076.3633978538" y="307.0" />
+      <point x="928.9537824691845" y="307.0" />
+      <point x="70.61538461538464" y="14.5" />
+    </edge>
+    <edge source="service.BookingService" target="model.VacationPackage">
+      <point x="58.39999999999998" y="-14.5" />
+      <point x="376.7583333333333" y="466.0" />
+      <point x="665.0955407109427" y="466.0" />
+      <point x="665.0955407109427" y="317.0" />
+      <point x="799.4922440076461" y="317.0" />
+      <point x="-58.84615384615381" y="14.5" />
+    </edge>
+    <edge source="service.VacationPackageService" target="model.VacationPackage">
+      <point x="57.714285714285666" y="-14.5" />
+      <point x="640.7562549966569" y="595.0" />
+      <point x="687.0955407109427" y="595.0" />
+      <point x="687.0955407109427" y="337.0" />
+      <point x="823.0307055461076" y="337.0" />
+      <point x="-35.307692307692264" y="14.5" />
+    </edge>
+    <edge source="controller.Customer" target="model.VacationDestination">
+      <point x="44.307692307692264" y="-14.5" />
+      <point x="599.0517091291642" y="764.0" />
+      <point x="763.4883978537998" y="764.0" />
+      <point x="763.4883978537998" y="516.0" />
+      <point x="910.6272867426887" y="516.0" />
+      <point x="-20.111111111111086" y="14.5" />
+    </edge>
+    <edge source="model.Booking" target="model.User">
+      <point x="-12.125" y="-14.5" />
+      <point x="527.524112139514" y="89.0" />
+      <point x="238.78036213951407" y="89.0" />
+      <point x="19.0" y="14.5" />
+    </edge>
+    <edge source="service.BookingService" target="model.User">
+      <point x="-58.39999999999998" y="-14.5" />
+      <point x="259.95833333333337" y="516.0" />
+      <point x="191.33333333333331" y="516.0" />
+      <point x="191.33333333333331" y="89.0" />
+      <point x="215.98036213951406" y="89.0" />
+      <point x="-3.8000000000000114" y="14.5" />
+    </edge>
+    <edge source="repository.VacationPackageRepo" target="repository.JpaDaoImpl">
+      <point x="-22.625" y="-14.5" />
+      <point x="522.80655125298" y="436.0" />
+      <point x="375.02854199372047" y="436.0" />
+      <point x="375.02854199372047" y="287.0" />
+      <point x="362.2071134222919" y="287.0" />
+      <point x="33.71428571428572" y="14.5" />
+    </edge>
+    <edge source="repository.UserRepo" target="model.User">
+      <point x="-34.666666666666686" y="-14.5" />
+      <point x="94.16666666666663" y="357.0" />
+      <point x="106.98036213951411" y="357.0" />
+      <point x="106.98036213951411" y="79.0" />
+      <point x="208.3803621395141" y="79.0" />
+      <point x="-11.399999999999977" y="14.5" />
+    </edge>
+    <edge source="service.VacationDestinationService" target="model.VacationDestination">
+      <point x="76.66666666666652" y="-14.5" />
+      <point x="986.5300645204666" y="605.0" />
+      <point x="993.4883978537998" y="605.0" />
+      <point x="993.4883978537998" y="516.0" />
+      <point x="950.8495089649109" y="516.0" />
+      <point x="20.111111111111086" y="14.5" />
+    </edge>
+    <edge source="repository.VacationPackageRepo" target="model.VacationPackage">
+      <point x="22.625" y="-14.5" />
+      <point x="568.05655125298" y="476.0" />
+      <point x="676.0955407109427" y="476.0" />
+      <point x="676.0955407109427" y="327.0" />
+      <point x="811.2614747768769" y="327.0" />
+      <point x="-47.076923076923094" y="14.5" />
+    </edge>
+    <edge source="controller.Admin" target="model.VacationDestination">
+      <point x="35.875" y="-14.5" />
+      <point x="1025.1542732317284" y="764.0" />
+      <point x="1055.8633978538" y="764.0" />
+      <point x="1055.8633978538" y="486.0" />
+      <point x="1011.1828422982444" y="486.0" />
+      <point x="80.44444444444446" y="14.5" />
+    </edge>
+    <edge source="model.User" target="model.Booking">
+      <point x="26.599999999999966" y="14.5" />
+      <point x="246.38036213951403" y="79.0" />
+      <point x="551.774112139514" y="79.0" />
+      <point x="12.125" y="-14.5" />
+    </edge>
+    <edge source="model.VacationPackage" target="model.Booking">
+      <point x="-51.0" y="-14.5" />
+      <point x="807.3383978538" y="198.0" />
+      <point x="557.836612139514" y="198.0" />
+      <point x="18.1875" y="14.5" />
+    </edge>
+    <edge source="repository.BookingRepo" target="model.User">
+      <point x="-50.0" y="-14.5" />
+      <point x="241.02854199372047" y="317.0" />
+      <point x="218.54761904761904" y="317.0" />
+      <point x="218.54761904761904" y="99.0" />
+      <point x="223.58036213951408" y="99.0" />
+      <point x="3.8000000000000114" y="14.5" />
+    </edge>
+    <edge source="service.VacationPackageService" target="repository.VacationPackageRepo">
+      <point x="-28.857142857142776" y="-14.5" />
+      <point x="554.1848264252285" y="585.0" />
+      <point x="500.18155125297994" y="585.0" />
+      <point x="-45.25" y="14.5" />
+    </edge>
+    <edge source="controller.Customer" target="controller.Register">
+      <point x="-66.46153846153845" y="-14.5" />
+      <point x="488.2824783599335" y="784.0" />
+      <point x="72.0" y="784.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="repository.VacationDestinationRepo" target="model.VacationDestination">
+      <point x="52.25" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="service.UserService" target="model.User">
+      <point x="-41.66666666666663" y="-14.5" />
+      <point x="66.33333333333331" y="69.0" />
+      <point x="200.78036213951407" y="69.0" />
+      <point x="-19.0" y="14.5" />
+    </edge>
+    <edge source="controller.Customer" target="model.VacationPackage">
+      <point x="22.15384615384619" y="-14.5" />
+      <point x="576.8978629753182" y="744.0" />
+      <point x="730.4883978537998" y="744.0" />
+      <point x="730.4883978537998" y="357.0" />
+      <point x="846.569167084569" y="357.0" />
+      <point x="-11.76923076923083" y="14.5" />
+    </edge>
+    <edge source="repository.JpaDaoImpl" target="repository.JpaDao">
+      <point x="0.0" y="-14.5" />
+      <point x="328.4928277080062" y="168.0" />
+      <point x="299.04761904761904" y="168.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="service.UserService" target="repository.UserRepo">
+      <point x="0.0" y="-14.5" />
+      <point x="108.0" y="516.0" />
+      <point x="102.83333333333331" y="516.0" />
+      <point x="-26.0" y="14.5" />
+    </edge>
+    <edge source="controller.Customer" target="model.Booking">
+      <point x="-33.23076923076928" y="-14.5" />
+      <point x="521.5132475907027" y="754.0" />
+      <point x="422.6803621395141" y="754.0" />
+      <point x="422.6803621395141" y="198.0" />
+      <point x="521.461612139514" y="198.0" />
+      <point x="-18.1875" y="14.5" />
+    </edge>
+    <edge source="model.VacationDestination" target="model.VacationPackage">
+      <point x="-36.200000000000045" y="-14.5" />
+      <point x="894.5383978537998" y="357.0" />
+      <point x="870.1076286230307" y="357.0" />
+      <point x="11.76923076923083" y="14.5" />
+    </edge>
+    <edge source="controller.Admin" target="service.BookingService">
+      <point x="-46.125" y="-14.5" />
+      <point x="943.1542732317286" y="714.0" />
+      <point x="324.82139777385294" y="714.0" />
+      <point x="324.82139777385294" y="605.0" />
+      <point x="330.525" y="605.0" />
+      <point x="12.166666666666629" y="14.5" />
+    </edge>
+    <edge source="controller.Register" target="model.User">
+      <point x="-18.0" y="-14.5" />
+      <point x="54.0" y="605.0" />
+      <point x="35.0" y="605.0" />
+      <point x="35.0" y="59.0" />
+      <point x="193.18036213951405" y="59.0" />
+      <point x="-26.600000000000023" y="14.5" />
+    </edge>
+    <edge source="controller.Admin" target="service.VacationDestinationService">
+      <point x="-15.375" y="-14.5" />
+      <point x="973.9042732317286" y="684.0" />
+      <point x="909.8633978538" y="684.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="model.VacationPackage" target="model.VacationDestination">
+      <point x="35.307692307692264" y="14.5" />
+      <point x="893.6460901614921" y="337.0" />
+      <point x="966.9383978537999" y="337.0" />
+      <point x="36.200000000000045" y="-14.5" />
+    </edge>
+    <edge source="repository.BookingRepo" target="model.Booking">
+      <point x="-25.0" y="-14.5" />
+      <point x="266.02854199372047" y="317.0" />
+      <point x="258.9928277080062" y="317.0" />
+      <point x="258.9928277080062" y="178.0" />
+      <point x="497.2116121395141" y="178.0" />
+      <point x="-42.4375" y="14.5" />
+    </edge>
+    <edge source="controller.Customer" target="service.VacationPackageService">
+      <point x="-11.076923076923094" y="-14.5" />
+      <point x="543.6670937445489" y="734.0" />
+      <point x="507.29196928237127" y="734.0" />
+      <point x="-75.75" y="14.5" />
+    </edge>
+    <edge source="repository.BookingRepo" target="repository.JpaDaoImpl">
+      <point x="25.0" y="-14.5" />
+      <point x="316.02854199372047" y="357.0" />
+      <point x="328.4928277080062" y="357.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="controller.Customer" target="service.BookingService">
+      <point x="-44.30769230769232" y="-14.5" />
+      <point x="510.4363245137797" y="764.0" />
+      <point x="303.57139777385294" y="764.0" />
+      <point x="303.57139777385294" y="595.0" />
+      <point x="281.85833333333335" y="595.0" />
+      <point x="-36.5" y="14.5" />
+    </edge>
+    <edge source="repository.VacationDestinationRepo" target="repository.JpaDaoImpl">
+      <point x="-52.25" y="-14.5" />
+      <point x="826.2383978537998" y="426.0" />
+      <point x="386.02854199372047" y="426.0" />
+      <point x="386.02854199372047" y="277.0" />
+      <point x="379.06425627943474" y="277.0" />
+      <point x="50.571428571428555" y="14.5" />
+    </edge>
+    <edge source="repository.BookingRepo" target="model.VacationPackage">
+      <point x="50.0" y="-14.5" />
+      <point x="341.02854199372047" y="307.0" />
+      <point x="787.7230132384152" y="307.0" />
+      <point x="-70.61538461538464" y="14.5" />
+    </edge>
+    <edge source="service.BookingService" target="model.Booking">
+      <point x="29.19999999999999" y="-14.5" />
+      <point x="347.55833333333334" y="456.0" />
+      <point x="400.9928277080062" y="456.0" />
+      <point x="400.9928277080062" y="188.0" />
+      <point x="509.3366121395141" y="188.0" />
+      <point x="-30.3125" y="14.5" />
+    </edge>
+    <edge source="service.VacationPackageService" target="model.Booking">
+      <point x="28.85714285714289" y="-14.5" />
+      <point x="611.8991121395142" y="585.0" />
+      <point x="646.43155125298" y="585.0" />
+      <point x="646.43155125298" y="208.0" />
+      <point x="545.711612139514" y="208.0" />
+      <point x="6.0625" y="14.5" />
+    </edge>
+    <edge source="controller.Admin" target="service.VacationPackageService">
+      <point x="-35.875" y="-14.5" />
+      <point x="953.4042732317286" y="704.0" />
+      <point x="608.2919692823713" y="704.0" />
+      <point x="25.25" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7706916764361079" x="569.1446076757413" y="429.1601274953836" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

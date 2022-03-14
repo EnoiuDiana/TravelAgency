@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Customer.CustomerAllBookingsController">
+    <children>
+        <TableView fx:id="tableViewVacationPackages" layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="872.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="176.0" text="Name" />
+                <TableColumn fx:id="destinationColumn" prefWidth="178.0" text="Destination" />
+                <TableColumn fx:id="priceColumn" text="Price" />
+                <TableColumn fx:id="startDateColumn" prefWidth="132.0" text="Start Date" />
+                <TableColumn fx:id="periodColumn" prefWidth="90.0" text="Period" />
+                <TableColumn fx:id="limitColumn" prefWidth="69.0" text="Limit" />
+                <TableColumn fx:id="detailsColumn" prefWidth="128.0" text="Details" />
+            </columns>
+        </TableView>
+      <Button layoutX="14.0" layoutY="275.0" mnemonicParsing="false" onAction="#showBookedVacationPackages" text="Show all bookings" />
+    </children>
+</AnchorPane>

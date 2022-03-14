@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin.AdminController">
+   <children>
+      <TabPane prefHeight="606.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Vacation Packages">
+               <content>
+                  <fx:include source="adminVacationPackages.fxml" />
+               </content>
+            </Tab>
+            <Tab text="Vacation Destination">
+               <content>
+                  <fx:include source="adminVacationDestination.fxml" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button layoutX="808.0" layoutY="606.0" mnemonicParsing="false" onAction="#backButtonPushed" text="Back" />
+   </children>
+</AnchorPane>

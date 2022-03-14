@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Admin.AdminVacationPackagesController">
+    <children>
+        <TableView fx:id="tableViewVacationPackages" layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="872.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" onEditCommit="#changeCellEvent" prefWidth="176.0" text="Name" />
+                <TableColumn fx:id="destinationColumn" onEditCommit="#changeCellEvent" prefWidth="178.0" text="Destination" />
+                <TableColumn fx:id="priceColumn" onEditCommit="#changeCellEvent" text="Price" />
+                <TableColumn fx:id="startDateColumn" onEditCommit="#changeCellEvent" prefWidth="132.0" text="Start Date" />
+                <TableColumn fx:id="periodColumn" onEditCommit="#changeCellEvent" prefWidth="90.0" text="Period" />
+                <TableColumn fx:id="limitColumn" onEditCommit="#changeCellEvent" prefWidth="69.0" text="Limit" />
+                <TableColumn fx:id="detailsColumn" onEditCommit="#changeCellEvent" prefWidth="128.0" text="Details" />
+            </columns>
+        </TableView>
+        <Button layoutX="14.0" layoutY="250.0" mnemonicParsing="false" onAction="#showVacationPackagesButtonPushed" text="Show vacation packages" />
+      <VBox layoutX="21.0" layoutY="313.0" prefHeight="168.0" prefWidth="872.0" spacing="10.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a new vacation package">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="19.0" prefWidth="853.0" spacing="50.0">
+               <children>
+                  <Label text="Select destination:" />
+                  <ComboBox fx:id="vacationDestinationComboBox" onAction="#comboBoxWasUpdated" onMouseClicked="#updateComboBox" prefHeight="25.0" prefWidth="220.0" />
+               </children>
+            </HBox>
+              <HBox prefHeight="49.0" prefWidth="853.0">
+                  <children>
+                  <VBox prefHeight="49.0" prefWidth="229.0">
+                     <children>
+                        <Label text="Name" />
+                            <TextField fx:id="nameTextField" prefHeight="38.0" prefWidth="222.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="49.0" prefWidth="88.0">
+                     <children>
+                        <Label text="Price" />
+                            <TextField fx:id="priceTextField" prefHeight="38.0" prefWidth="80.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="56.0" prefWidth="184.0">
+                     <children>
+                        <Label text="Start date(zz/mm/yyyy)" />
+                            <TextField fx:id="startDateTextField" prefHeight="38.0" prefWidth="157.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="56.0" prefWidth="135.0">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="173.0" text="Period (in days)" />
+                            <TextField fx:id="periodTextField" prefHeight="38.0" prefWidth="101.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="56.0" prefWidth="151.0">
+                     <children>
+                        <Label text="Limit (no of people)" />
+                            <TextField fx:id="limitTextField" prefHeight="38.0" prefWidth="78.0" />
+                     </children>
+                  </VBox>
+                  </children>
+              </HBox>
+              <Button mnemonicParsing="false" onAction="#newVacationPackageButtonPushed" text="Add vacation package" />
+         </children>
+      </VBox>
+        <Button layoutX="220.0" layoutY="250.0" mnemonicParsing="false" onAction="#deleteVacationPackageButtonPushed" text="Delete vacation package" />
+      <Button layoutX="426.0" layoutY="250.0" mnemonicParsing="false" onAction="#showStatus" text="View status" />
+    </children>
+</AnchorPane>
